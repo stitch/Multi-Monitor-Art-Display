@@ -1,0 +1,32 @@
+Modules are called with the function "Initialize". They are cleared with "Clear".
+
+If you want to make a module called "foo", make sure all methods and CSS classes have the prefix foo.
+
+So the initialize routine of foo, that will be automatically called is fooInitialize(). 
+When your time is over the fooClear() function is executed.
+
+A simple module for displaying four webpages thus looks like this.
+
+/**
+	<MODULE Websites>
+*/
+function websitesInitialize(){
+	clearScreen();
+	displayURLOnMonitor("monitor1", "https://hack42.nl/gallery/v/Spacecam/");
+	displayURLOnMonitor("monitor2", "https://hack42.nl/spacestate/1wire/plattegrond.php#contentSub");
+	displayURLOnMonitor("monitor3", "https://hack42.nl/wiki/Activiteiten?useskin=chick#toekomstig");
+	displayURLOnMonitor("monitor4", "https://twitter.com/hack42");
+}
+
+function websitesClear(){
+	clearScreen();
+}
+/**
+	</MODULE websites>	
+*/
+
+Modules are stored in their own folders. They are loaded by script.js when specified.
+
+
+
+Dutch extended info:

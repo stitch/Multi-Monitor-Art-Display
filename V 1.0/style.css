@@ -1,0 +1,14 @@
+body { 
+	color: #333; 
+	font: 20px georgia; 
+	
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+#sa007Werkwoord, #sa007Iets, #sa007Voorzetsel, #sa007Voornaamwoord {
+	font-family: fixed; 
+	font-size: 300pt;
+	color: black;
+}
